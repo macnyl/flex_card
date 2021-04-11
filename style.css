@@ -1,0 +1,92 @@
+body{
+    --card-width: 300px;
+    --main-color: rgb(56, 51, 137);
+
+}
+
+*{
+    margin: 0;
+    padding: 8;
+    box-sizing: border-box;
+}
+
+.flexContainer{
+    height: 100vh;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cardContainer{
+    width: var(--card-width);
+    height: calc(var(--card-width) * 1.5);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+/* justify-content: space-between; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topCardBackground{
+    background-color: var(--main-color);
+    width: 100%;
+    height: calc(var(--card-width) * 0.4);
+}
+
+.userProfileImage{
+    width: calc(var(--card-width) * 0.5);
+    height: calc(var(--card-width) * 0.5);
+    border: 2px solid #555;
+    border-radius: 50%;
+    background-color: darkolivegreen;
+    margin-top: calc(var(--card-width) * (-0.25));
+    overflow: hidden;
+}
+
+.userProfileImage > img {
+    object-fit: cover;
+    width: 100%;
+    height: calc(var(--card-width) * 0.5);
+
+}
+
+.userName{
+    color: var(--main-color);
+    padding: 6px;
+}
+
+.userPosition{
+    color: var(--main0color);
+    padding: 6px;
+
+}
+
+.userInfo{
+    padding: 10px;
+    /* color: var(--main-color); */
+    text-align: center;
+}
+
+.socialLinks{
+    display: flex;
+    width: 100%;
+}
+
+.socialLinks > div{
+    /* margin-top: auto; */
+    width: 50%;
+    padding: 3px;
+    border-top: 1px solid grey;
+    /* border-bottom: 1px solid grey; */
+    text-align: center;
+
+}
+
+.GitHubLink{
+    border-left: 1px solid grey;
+}
